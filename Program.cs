@@ -16,7 +16,7 @@ string[] VvodDannih(int size)
     
     for (int i = 0; i <= size-1; i++)
     {
-        Console.WriteLine($"Введите {i} элемент массива (вводить можно любые символы): ");   //тут вводим сами элементы массива и запоминаем их 
+        Console.WriteLine($"Введите {i} элемент массива (вводить можно любые символы и любое количество): ");   //тут вводим сами элементы массива и запоминаем их 
         array[i] = Console.ReadLine();
     }
     return array; // возвращаем из функции массив
@@ -25,10 +25,16 @@ string[] VvodDannih(int size)
 // функция вывода в консоль
 void ShowArray(string[] array)
 {
-    Console.Write("Элементы массива: [  ");
+    int x = 3;  //По условию задачи стоит ограничение 3 символами,
+    // Хотя для экономии памяти можно было прям в условии указать "магическим числом",
+    // но их нас учили не делать...  поэтому займу кусок памяти :)
+    Console.Write("Элементы массива содержащие 3 и менее символов: [  ");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i]+"  ");
+        if(array[i].Length<=x) 
+        {
+            Console.Write(array[i]+"  ");
+        }
     }
     Console.Write(" ]");
 }
@@ -36,5 +42,4 @@ void ShowArray(string[] array)
 
 Console.WriteLine("Сколько элементов будет в массиве?");   // задаем значение размера массива которое потом будем использовать при создании массива.
 int size = Convert.ToInt32(Console.ReadLine());
-
 ShowArray(VvodDannih(size));
