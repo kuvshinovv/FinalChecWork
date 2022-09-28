@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # FinalChecWork
 
 >>>>>>> 1e8db443ab862c46b803a974d51d0ceec6c7cd2c
@@ -16,6 +15,3 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 <<<<<<< HEAD
 [“Russia”, “Denmark”, “Kazan”] → []
-=======
-[“Russia”, “Denmark”, “Kazan”] → []
->>>>>>> 1e8db443ab862c46b803a974d51d0ceec6c7cd2c
