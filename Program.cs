@@ -8,3 +8,20 @@
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
+
+
+string[] VvodDannih(int size)
+{    // функция ввода элементов массива
+    string[] array = new string[size];   // Создал новый массив с размером size
+    
+    for (int i = 0; i <= size-1; i++)
+    {
+        Console.WriteLine($"Введите {i} элемент массива: ");   //тут вводим сами элементы массива и запоминаем их 
+        array[i] = Console.ReadLine();
+    }
+    return array; // возвращаем из функции массив
+}
+
+Console.WriteLine("Сколько элементов будет в массиве?");   // задаем значение размера массива которое потом будем использовать при создании массива.
+int allElements = Convert.ToInt32(Console.ReadLine());
+VvodDannih(allElements);
