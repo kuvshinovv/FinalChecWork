@@ -43,3 +43,5 @@ void ShowArray(string[] array)
 Console.WriteLine("Сколько элементов будет в массиве?");   // задаем значение размера массива которое потом будем использовать при создании массива.
 int size = Convert.ToInt32(Console.ReadLine());
 ShowArray(VvodDannih(size));
+
+// Все работает!!!
